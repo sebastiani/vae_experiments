@@ -1,0 +1,22 @@
+{
+  "model": "GaussianMLP_VAE",
+  "weights": "weights/GaussianMLP_VAE",
+  "dataset": {
+    "name": "FashionMNIST",
+    "path": "/home/se26956/projects/vae_experiments/"
+  },
+  "input_dim": 784,
+  "hidden_dim": 128,
+  "z_dim": 100,
+  "epochs": 100,
+  "batch_size": 64,
+  "loss": "VAELoss",
+  "optimizer":{
+    "type": "Adam",
+    "args": {
+      "lr": 0.001
+    }
+  },
+  "device": "cuda:0",
+  "num_workers": 12
+}
